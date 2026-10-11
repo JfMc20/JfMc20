@@ -1,48 +1,43 @@
-# Jose F. Molina
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg">
+  <img src="./assets/banner-light.svg" alt="Jose F. Molina — software engineer, full-stack / DevOps, Guayaquil, Ecuador" width="1000">
+</picture>
 
-**Software engineer — full-stack / DevOps.** Guayaquil, Ecuador (UTC-5).
+I build systems that survive measurement. Tests before code, deterministic-first
+architecture, and verification against the real deployment instead of a green baseline.
 
-I build systems that are **measured, not asserted**: deterministic-first architecture,
-tests before code, and verification against the real deployment instead of a green
-baseline.
+`Python` `FastAPI` `Pydantic` `SQLAlchemy` `TypeScript` `React` `Vite` `Tailwind` `Radix UI` `Docker` `Linux` `pytest` `Playwright` `MCP`
 
----
+## In the lab
 
-## What I work on
+**A WhatsApp bot engine sold as a service.** The business script is a YAML profile, not
+code — onboarding a business is a config change, and the generic core holds no client data:
 
-- **Backend & data** — Python 3.12+, FastAPI, Pydantic v2, SQLAlchemy 2.0, httpx.
-  Offline-testable pipelines, CLIs and services backed by PostgreSQL or SQLite.
-- **Frontend** — React + TypeScript + Vite + Tailwind + Radix UI; admin panels in
-  Mantine. Typed, linted, built in CI.
-- **Infra & DevOps** — Docker / Compose, Linux (Arch / Omarchy), deployments, reverse
-  proxies and backups that are checked after the fact, not assumed.
-- **Automation & agents** — orchestrating headless CLI coding agents, MCP tooling, and
-  bots where the business script is **data (YAML profile), not code**, so onboarding a
-  new client is a config change and not a fork.
-- **Data pipelines** — HTTP-only collectors over public sources, normalized into one
-  store, exposed through a library + API + CLI.
+```
+profile.yaml  ──►  generic engine  ──►  one isolated instance per business
+```
 
-## How I work
+**An Ecuadorian real-estate leads pipeline.** Ten public sources, one store, three
+surfaces: a library, an HTTP API and an operator CLI.
 
-- Red → green → refactor. Tests first, no exceptions.
-- Evidence over assertions: real command output, real diffs, real numbers.
-- Destructive operations confirmed up front, never improvised.
-- Boundaries respected: a repo consumes another through its public surface; it does not
-  reach into it.
-- English in code, commits and docs. Configuration as data, not as branches.
+**Headless CLI coding agents as a work force.** Frozen contracts, cross-model review and
+output audits — delegated work gets verified, not trusted.
 
-## Stack
+## Surfaces
 
-`Python` · `FastAPI` · `Pydantic` · `SQLAlchemy` · `PostgreSQL` · `SQLite` ·
-`pytest` · `Playwright` · `TypeScript` · `React` · `Vite` · `Tailwind CSS` ·
-`Radix UI` · `Node.js` · `Docker` · `Compose` · `Linux` · `Git` · `MCP`
+| Surface | Why it exists |
+| --- | --- |
+| CLI | the operator's path; the same code path the API hits |
+| HTTP API | FastAPI + Pydantic v2 contracts |
+| MCP tools | an agent gets a scoped tool, never a shell |
+| YAML profile | the client's business as data, not as a fork |
 
-## Contact
+## Method
 
-- Telegram — [@Jfmcs20_bot](https://t.me/Jfmcs20_bot)
-- Location — Guayaquil, Ecuador (UTC-5)
+Red → green → refactor · real output, real diffs, real numbers · one service reaches
+another only through its public surface · destructive commands are confirmed before they
+run · config as data, not branches.
 
 ---
 
-*Most of my work lives in private repositories: client systems, products in
-development and labs under measurement. Ask and I'll walk you through the architecture.*
+<sub>Telegram [@Jfmcs20_bot](https://t.me/Jfmcs20_bot) · Guayaquil, Ecuador (UTC-5) · most repositories are private: client systems and products under measurement.</sub>
